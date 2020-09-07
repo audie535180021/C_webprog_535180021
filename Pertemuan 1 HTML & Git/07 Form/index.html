@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form action="" method="get">
+        <fieldset>
+            <p>This is where the form controls will appear</p>
+            <input type="hidden" name="uid" value="ids">
+            <br>
+            <label for="uname">Username:</label>
+            <input type="text" name="uname" id="uname">
+            <br>
+
+            <label for="pw">Password:</label>
+            <input type="password" name="pw" id="pw">
+            <br>
+
+            <label for="bdate">Birth Date: </label>
+            <input type="date" name="bdate" id="bdate">
+            <br>
+
+            <label for="mail">Email Address: </label>
+            <input type="email" name="mail" id="mail">
+            <br>
+
+            <label for="web">Website address: </label>
+            <input type="url" name="web" id="web">
+            <br>
+
+            <label for="cmnt">Comment : </label>
+            <textarea name="cmnt" id="cmnt" cols="30" rows="10" placeholder="ketik komentar anda di sini..."></textarea>
+            <br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <label for="mg">Music Genre: </label>
+            <br>
+            <input type="radio" name="mg" value="rock" checked="checked"> rock
+            <br>
+            <input type="radio" name="mg" value="pop"> pop
+            <br>
+            <input type="radio" name="mg" value="jazz"> Jazz
+            <br>
+
+            <label for="platform">Music Platform : </label>
+            <br>
+            <input type="checkbox" name="plaform" value="spotify" checked="checked"> Spotify
+            <br>
+            <input type="checkbox" name="plaform" value="itunes"> iTunes
+            <br>
+            <input type="checkbox" name="plaform" value="joox"> Joox
+            <br>
+
+            <p>What device do you listen to music on ?</p>
+            <select name="devices" id="">
+                <option value="ipod">iPod</option>
+                <option value="radio">Radio</option>
+                <option value="computer">Computer</option>
+            </select>
+            <br>
+
+            <p>What music instrument can you play ?</p>
+            <select name="instrument" size="3" multiple="multiple">
+                <option value="guitar">Guitar</option>
+                <option value="drum">Drum</option>
+                <option value="keyboard">Keyboard</option>
+                <option value="bass">Bass</option>
+            </select>
+            <br>
+
+            <p>Upload your song in mp3 format: </p>
+            <input type="file" name="user-song">
+            <br>
+            <button type="submit" value="upload">Upload</button>
+        </fieldset>
+
+        <p>Dibuah oleh Audie Milson</p>
+
+
+
+    </form>
+</body>
+
+</html>
