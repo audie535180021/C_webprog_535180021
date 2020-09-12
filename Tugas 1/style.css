@@ -28,7 +28,7 @@ body {
     max-width: 400px;
     max-height: 200px;
     background-color: red;
-    border-radius: 50%;
+    border-radius: 5px;
     object-fit: contain;
 }
 
