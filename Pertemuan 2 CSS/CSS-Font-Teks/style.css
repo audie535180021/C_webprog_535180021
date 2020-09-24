@@ -1,0 +1,36 @@
+p.satu {
+    font-size: xx-small;
+    font-weight: 100;
+    font-style: normal;
+    color: red;
+    text-align: left;
+    text-decoration: underline;
+    text-indent: 3em;
+}
+
+p.dua {
+    font-size: 12px;
+    font-weight: 700;
+    font-style: italic;
+    font-variant: small-caps;
+    color: #0000ff;
+    text-align: right;
+    text-decoration: overline;
+}
+
+p.tiga {
+    font-size: 3pc;
+    font-weight: 200;
+    font-style: oblique;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(248, 53%, 58%);
+}
+
+p.empat {
+    font-size: 70%;
+    font-weight: 900;
+    text-align: justify;
+    text-decoration: line-through;
+    color: rgb(255, 0, 255);
+}

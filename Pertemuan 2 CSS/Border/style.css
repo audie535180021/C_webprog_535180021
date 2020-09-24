@@ -1,0 +1,35 @@
+.border {
+    padding: 2px;
+}
+
+.border-solid {
+    border: 2px solid #000000;
+}
+
+.border-dotted {
+    border: 2px dotted red;
+}
+
+.border-dashed {
+    border: 2px dashed rgb(255, 0, 0);
+}
+
+.border-groove {
+    border: 2px groove rgba(0, 51, 255, 1.00);
+}
+
+.border-ridge {
+    border: 2px ridge hsl(228, 100%, 50%);
+}
+
+.border-inset {
+    border: 2px inset hsla(359, 100%, 50%, 1.00);
+}
+
+.border-outset {
+    border: 2px outset black;
+}
+
+.border-hidden {
+    border: 2px hidden;
+}

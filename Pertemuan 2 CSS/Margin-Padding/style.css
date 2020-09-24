@@ -1,0 +1,41 @@
+p {
+    margin: 40px 20px 30px 20px;
+    border: 1px solid #000000;
+}
+
+em {
+    background-color: #cccccc;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.dropshadow {
+    text-shadow: 2px 2px 3px #ff0000;
+}
+
+p.none {
+    text-transform: none;
+    letter-spacing: 3px;
+}
+
+p.capitalize {
+    text-transform: capitalize;
+    letter-spacing: 0.5em;
+}
+
+p.uppercase {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+p.lowercase {
+    text-transform: lowercase;
+}
+
+p.ltr {
+    direction: ltr;
+}
+
+p.rtl {
+    direction: rtl;
+}

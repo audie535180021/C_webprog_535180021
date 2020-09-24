@@ -1,0 +1,29 @@
+/* Ini External CSS */
+#footer {
+    color: blue;
+    border: 1px solid black;
+}
+
+div>p {
+    color: white;
+    background: green;
+    padding: 2px;
+    text-align: center;
+}
+
+div h2 {
+    text-align: center;
+}
+
+.adja {
+    text-align: center;
+    border: 1px solid black;
+}
+
+h1+h2 {
+    color: red;
+}
+
+div~p {
+    background-color: yellow;
+}

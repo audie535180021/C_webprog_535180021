@@ -1,0 +1,15 @@
+li {
+    display: inline;
+}
+
+.hide {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+span {
+    display: block;
+}
