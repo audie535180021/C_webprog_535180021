@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Data Type</title>
+</head>
+
+<body>
+    <button type="button" onclick="ChangeContent('cLine1', 500)">Go</button>
+    <button type="button" onclick='AddString("cLine1", "Hello", "World")'>Replace String</button>
+    <p id="cLine1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, fuga?
+    </p>
+
+    <input type="number" id="input1" /> +
+    <input type="number" id="input2" />
+    <button type="button"
+        onclick='Add("btnAdd", document.getElementById("input1").value , document.getElementById("input2").value)'>=</button>
+    <input type="number" id="btnAdd" />
+
+    <br><br>
+
+    <input type="number" id="input3" /> -
+    <input type="number" id="input4" />
+    <button type="button"
+        onclick='Sub("btnSub", document.getElementById("input3").value , document.getElementById("input4").value)'>=</button>
+    <input type="number" id="btnSub" />
+
+    <script>
+        function ChangeContent(id, num) {
+            let x;
+            x = 3;
+            let res = Number(num) + Number(x);
+            document.getElementById(id).innerHTML = "3 + " + num + " = " + res;
+        }
+
+        function AddString(id, str1, str2) {
+            document.getElementById(id).innerHTML = str1 + str2;
+        }
+
+        function Add(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) + Number(inp2);
+        }
+
+        function Sub(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) - Number(inp2);
+        }
+    </script>
+</body>
+
+</html>
