@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Introduction</title>
+    <style>
+        .MakeRed {
+            color: red;
+        }
+
+        .MakeBlue {
+            color: blue;
+        }
+
+        .Hide {
+            visibility: hidden;
+        }
+
+        .Show {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- event Alert using button onclick -->
+    <button type="button" onclick="alert('Hello')">Show Alert</button>
+    <!-- js dom manipulation inner html -->
+    <button type="button" onclick="document.getElementById('cGreeting').innerHTML = 'Hello World!'">
+        Change Content
+    </button>
+    <!-- js dom manipulation element style -->
+    <button type="button" onclick="document.getElementById('cStyle').style.fontWeight='800'">
+        Change Style
+    </button>
+    <!-- js dom manipulation change element class -->
+    <button type="button" onclick="document.getElementById('cLine1').className='MakeRed'">Change Color</button>
+    <button type="button" onclick="document.getElementById('cLine2').className='Hide'">Hide</button>
+    <button type="button" onclick="document.getElementById('cLine2').className='Show'">Show</button>
+
+
+    <p id="cGreeting">Content</p>
+    <p id="cStyle">Style</p>
+    <p id="cLine1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempore sapiente id hic, quo fugit
+        nostrum autem quam ratione neque.</p>
+    <p id="cLine2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore soluta sit numquam a dolore neque.
+        Aliquid possimus eveniet eaque amet, sit, totam consequuntur ipsam, nam a nulla commodi est cum!</p>
+
+    <!-- Button onclick with js function -->
+    <button type="button" onclick="changeLine3Style()">Go</button>
+    <button type="button" onclick="ChangeStyle('cLine3','Hide')">Hide this</button>
+    <button type="button" onclick="ChangeStyle('cLine3','Show')">Show this</button>
+    <button type="button" onclick='WriteLog("Log this")'>Log</button>
+
+    <p id="cLine3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quo ipsa, molestias recusandae
+        praesentium quidem.</p>
+    <br>
+
+    <!-- Button Change All -->
+    <button type="button" onclick='changeAll("Audie Milson")'>Change All</button>
+
+    <script>
+        function changeLine3Style() {
+            document.getElementById('cLine3').className = "MakeBlue";
+        }
+
+        function ChangeStyle(id, classname) {
+            document.getElementById(id).className = classname;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
