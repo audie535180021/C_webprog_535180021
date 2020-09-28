@@ -28,6 +28,30 @@
         onclick='Sub("btnSub", document.getElementById("input3").value , document.getElementById("input4").value)'>=</button>
     <input type="number" id="btnSub" />
 
+    <br><br>
+
+    <input type="number" id="input5" /> *
+    <input type="number" id="input6" />
+    <button type="button"
+        onclick='times("btnTim", document.getElementById("input5").value , document.getElementById("input6").value)'>=</button>
+    <input type="number" id="btnTim" />
+
+    <br><br>
+
+    <input type="number" id="input7" /> /
+    <input type="number" id="input8" />
+    <button type="button"
+        onclick='divi("btnDiv", document.getElementById("input7").value , document.getElementById("input8").value)'>=</button>
+    <input type="number" id="btnDiv" />
+
+    <br><br>
+
+    <input type="number" id="input9" /> %
+    <input type="number" id="input10" />
+    <button type="button"
+        onclick='modulo("btnMod", document.getElementById("input9").value , document.getElementById("input10").value)'>=</button>
+    <input type="number" id="btnMod" />
+
     <script>
         function ChangeContent(id, num) {
             let x;
@@ -46,6 +70,18 @@
 
         function Sub(id, inp1, inp2) {
             document.getElementById(id).value = Number(inp1) - Number(inp2);
+        }
+
+        function times(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) * Number(inp2);
+        }
+
+        function divi(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) / Number(inp2);
+        }
+
+        function modulo(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) % Number(inp2);
         }
     </script>
 </body>
