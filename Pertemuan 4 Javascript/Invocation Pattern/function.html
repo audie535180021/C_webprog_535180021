@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Function Invocation Pattern</title>
+</head>
+
+<body>
+    <button type="button" onclick='obj.add(2, 4);'>Addition</button>
+    <br><br>
+
+    <button type="button" onclick='Show()'>Show</button>
+    <p id="oResult"></p>
+
+    <script>
+        let obj = {};
+        obj.add = function (val1, val2) {
+            let that = this;
+            let inner = function () {
+                that.sum = val1 + val2;
+            }
+            inner(); // Function Invocation
+        }
+
+        function Show() {
+            document.getElementById("oResult").innerHTML = obj.sum;
+        }
+    </script>
+</body>
+
+</html>
