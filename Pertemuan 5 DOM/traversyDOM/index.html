@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | DOM Traversal</title>
+</head>
+
+<body>
+    <ul id="menu">
+        <li class="first">Home</li>
+        <li>Products</li>
+        <li class="current">Customer Support</li>
+        <li>Careers</li>
+        <li>Investors</li>
+        <li>News</li>
+        <li class="last">About Us</li>
+    </ul>
+
+    <div id="main">
+        <p class="note">This is a note!</p>
+    </div>
+
+    <script>
+        // FirstChild
+        const content = document.getElementById('menu');
+        // membuat content sebagai parent node
+        let firstChild = content.firstChild.nodeName;
+        let children = content.children;
+        console.log(children)
+
+        // Parent Node
+        let note = document.querySelector('.note');
+        // menampilkan parentNode dari note
+        console.log(note.parentNode);
+    </script>
+</body>
+
+</html>
