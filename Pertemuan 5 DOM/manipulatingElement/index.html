@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | DOM Manipulating Element</title>
+</head>
+
+<body>
+
+    <script>
+        // Create element using JS DOM
+        let div = document.createElement('div');
+        div.id = 'content';
+        div.className = 'classcontent';
+        // membuat node text
+        let text = document.createTextNode('Create Element menggunakan TextNode');
+        // memasukkan text ke div
+        div.appendChild(text);
+        // memasukkan div ke body
+        document.body.appendChild(div);
+    </script>
+</body>
+
+</html>
