@@ -1,0 +1,77 @@
+body {
+    background-color: #dad7c7;
+}
+
+#searchArea {
+    margin: 0 auto;
+    text-align: center;
+    background: chocolate;
+    padding: 10px;
+    width: 30%;
+}
+
+#searchArea label {
+    font: bold 1.3em arial;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: yellow;
+}
+
+#searchArea p {
+    margin: 0;
+    line-height: 1em;
+    padding-bottom: 5px;
+}
+
+#searchArea input {
+    width: 80%;
+    text-align: center;
+}
+
+#output {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 70%;
+    margin: 20px auto;
+}
+
+#output ul {
+    list-style: none;
+}
+
+#output ul li {
+    width: 100%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+    height: 110px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 5px;
+    animation: myanimation 1s;
+    transition: height 0.3s ease-out;
+}
+
+#output li:hover {
+    background: #fffce5;
+    min-height: 110px;
+    height: 200px;
+    overflow: visible;
+}
+
+#output img {
+    float: left;
+    width: 150px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+/* Animation */
+@keyframes myanimation {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
