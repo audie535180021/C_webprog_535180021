@@ -1,0 +1,16 @@
+{
+  "name": "modul_mongodb",
+  "version": "1.0.0",
+  "description": "modul praktikum mongo db",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Audie Milson",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.10.15",
+    "nodemon": "^2.0.6"
+  }
+}
